@@ -99,14 +99,17 @@
     border-radius: 10px;
     /* display: inline-block; */
 }
-@media(max-width:768px){
+@media (max-width: 768px){
     .about{
         gap: 80px;
         margin: 50px 70px;
         align-items: start;
     }
+    .about-title{
+        margin: 0px auto;
+    }
     .about-title h1{
-        font-size: 50px;
+        font-size: 45px;
         padding: 0;
     }
     .about-title img{
