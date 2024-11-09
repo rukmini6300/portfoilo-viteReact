@@ -94,6 +94,6 @@
         margin-bottom: 50px;
     }
     .footer-top-left p{
-        max-width: 0px;
+        max-width: 100%;
     }
 }
