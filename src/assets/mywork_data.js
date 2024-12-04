@@ -40,7 +40,7 @@ const mywork_data = [
         w_no:6,
         w_name:"Web design",
         w_img:project6_img,
-        w_url:"https://rukmini6300.github.io/Dunzo-website/"
+        w_url:"https://rukmini6300.github.io/MRJ-website/"
     },
 ]
  
