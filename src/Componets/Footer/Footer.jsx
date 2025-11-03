@@ -18,7 +18,7 @@ const Footer = () => {
         <h1>Rukmini</h1>
         <img src={theme_pattern} alt='about'/>
       </div>
-      <p>I am frontend developer from, Hyderabad with 2+ years of expeience in company like Bitkemy Technologies Pvt Ltd</p>
+      <p>I am frontend developer from, Hyderabad with 3+ years of expeience in company like Bitkemy Technologies Pvt Ltd</p>
       </div>
         <div className="footer-top-right">
             <div className="footer-email-input">

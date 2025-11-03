@@ -10,7 +10,7 @@ const Hero = () => {
     <div id='home' className='hero'>
       <img src={profile_rukmini1} alt='img'/>
       <h1><span>I'm Rukmini,</span> frontend developer</h1>
-      <p>I am a frontend developer from Hyderabad, Telangana with 2+ years of experience in Bitkemy Technologies Pvt Ltd.</p>
+      <p>I am a frontend developer from Hyderabad, Telangana with 3+ years of experience in Bitkemy Technologies Pvt Ltd.</p>
       <div className="hero-action">
         <div className="hero-connect"><AnchorLink className='anchor-link' offset={50} href="#contact">Connect with me</AnchorLink></div>
         <div className="hero-resume"><a href={resume} target="_blank" rel="noopener noreferrer">My Resume</a> </div>
