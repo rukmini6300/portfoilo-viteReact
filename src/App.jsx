@@ -17,6 +17,8 @@ const App = () => {
       <MyWork />
       <Contact />
       <Footer />
+      {/* https://rukmini6300.github.io/portfoilo-viteReact/ */}
+      {/* with media query output */}
     </div>
   )
 }

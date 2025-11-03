@@ -34,13 +34,13 @@ const mywork_data = [
         w_no:5,
         w_name:"Web design",
         w_img:project5_img,
-        w_url:"https://rukmini6300.github.io/Translite/"
+        w_url:"https://rukmini6300.github.io/MRJ-website/"
     },
     {
         w_no:6,
         w_name:"Web design",
         w_img:project6_img,
-        w_url:"https://rukmini6300.github.io/MRJ-website/"
+        w_url:"https://rukmini6300.github.io/Dunzo-website/"
     },
 ]
  
