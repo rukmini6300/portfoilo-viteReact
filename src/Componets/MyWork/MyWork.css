@@ -1,0 +1,96 @@
+.mywork-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: var(--color-surface);
+  text-decoration: none;
+  transition: transform 180ms ease, border-color 180ms ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: rgb(216 139 242 / 45%);
+}
+
+.project-image {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-surface-raised);
+}
+
+.project-image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1.38;
+  object-fit: cover;
+  transition: transform 280ms ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.035);
+}
+
+.project-open {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 1px solid rgb(255 255 255 / 22%);
+  border-radius: 50%;
+  background: rgb(17 16 20 / 78%);
+  opacity: 0;
+  transition: opacity 180ms ease;
+}
+
+.project-card:hover .project-open,
+.project-card:focus-visible .project-open {
+  opacity: 1;
+}
+
+.project-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px;
+}
+
+.project-caption h3 {
+  margin: 0;
+  font-family: Manrope, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.project-caption p {
+  margin: 5px 0 0;
+  color: var(--color-muted);
+  font-size: 11px;
+}
+
+.project-caption > span {
+  color: var(--color-accent);
+  font-size: 17px;
+}
+
+@media (max-width: 800px) {
+  .mywork-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mywork-grid {
+    grid-template-columns: 1fr;
+  }
+}
