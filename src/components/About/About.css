@@ -1,0 +1,144 @@
+.about-layout {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  align-items: start;
+  gap: 64px;
+}
+
+.about-card {
+  position: sticky;
+  top: calc(var(--nav-height) + 28px);
+  padding: 26px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(160deg, rgb(var(--accent-rgb) / 8%), var(--color-surface) 55%);
+}
+
+.about-card-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.about-monogram {
+  display: grid;
+  width: 52px;
+  height: 52px;
+  flex: 0 0 52px;
+  place-items: center;
+  border-radius: var(--radius-md);
+  background: var(--color-accent-solid);
+  color: var(--color-on-accent);
+  font-family: Manrope, sans-serif;
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.about-card-header h3 {
+  margin: 0;
+  font-family: Manrope, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.about-card-header p {
+  margin: 4px 0 0;
+  color: var(--color-muted);
+  font-size: 13px;
+}
+
+.about-facts {
+  display: grid;
+  gap: 16px;
+  margin: 20px 0 0;
+}
+
+.about-facts div {
+  display: grid;
+  gap: 4px;
+}
+
+.about-facts dt {
+  color: var(--color-muted);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.about-facts dd {
+  margin: 0;
+  color: var(--color-text);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.about-intro {
+  margin: 0;
+  font-family: Manrope, sans-serif;
+  font-size: clamp(20px, 2.3vw, 25px);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.55;
+}
+
+.about-description {
+  margin: 18px 0 36px;
+  color: var(--color-muted);
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.about-strengths {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about-strengths li {
+  padding: 18px 20px;
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-accent-solid);
+  border-radius: var(--radius-sm);
+  background: rgb(255 255 255 / 2%);
+}
+
+.about-strengths h3 {
+  margin: 0 0 6px;
+  font-family: Manrope, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.about-strengths p {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+@media (max-width: 800px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .about-card {
+    position: relative;
+    top: auto;
+  }
+
+  .about-facts {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 440px) {
+  .about-facts {
+    grid-template-columns: 1fr;
+  }
+}
