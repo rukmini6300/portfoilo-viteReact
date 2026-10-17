@@ -1,25 +1,28 @@
-import React from 'react'
-import Navbar from './Componets/Navbar/Navbar'
-import Hero from './Componets/Hero/Hero'
-import About from './Componets/About/About'
-import Services from './Componets/Services/Services'
-import MyWork from './Componets/MyWork/MyWork'
-import Contact from './Componets/Contact/Contact'
-import Footer from './Componets/Footer/Footer'
+import Navbar from './components/Navbar/Navbar'
+import Hero from './components/Hero/Hero'
+import About from './components/About/About'
+import Experience from './components/Experience/Experience'
+import Skills from './components/Skills/Skills'
+import Services from './components/Services/Services'
+import MyWork from './components/MyWork/MyWork'
+import Contact from './components/Contact/Contact'
+import Footer from './components/Footer/Footer'
 
-const App = () => {
+function App() {
   return (
-    <div>
+    <>
       <Navbar />
-      <Hero />
-      <About />
-      <Services />
-      <MyWork />
-      <Contact />
+      <main>
+        <Hero />
+        <About />
+        <Experience />
+        <Skills />
+        <Services />
+        <MyWork />
+        <Contact />
+      </main>
       <Footer />
-      {/* https://rukmini6300.github.io/portfoilo-viteReact/ */}
-      {/* with media query output */}
-    </div>
+    </>
   )
 }
 

@@ -1,8 +1,24 @@
-# React + Vite
+# Rukmini Bongu — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive portfolio for frontend developer Rukmini Bongu, built with React and Vite.
 
-Currently, two official plugins are available:
+## Getting started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Requirements: Node.js 18+ and npm.
+
+```sh
+npm install
+npm run dev
+```
+
+## Available scripts
+
+| Script | Description |
+| --- | --- |
+| `npm run dev` | Start the local Vite development server |
+| `npm run build` | Create a production build in `dist/` |
+| `npm run preview` | Preview the production build locally |
+| `npm run lint` | Run ESLint |
+
+The contact form uses Web3Forms. Its access key is configured in
+`src/Componets/Contact/Contact.jsx`.
